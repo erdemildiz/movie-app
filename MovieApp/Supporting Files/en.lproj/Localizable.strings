@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  MovieApp
+
+  Created by Erdem ILDIZ on 25.02.2021.
+  
+*/
+
+// MARK: - A
+"actor" = "Actor";
+
+// MARK: - D
+"direction" = "Direction";
+
+// MARK: - G
+"genre" = "Genre";
+
+// MARK: - İ
+"imdbrating" = "IMDB Rating";
+
+// MARK: - L
+"language" = "Language";
+
+// MARK: - N
+"notfound" = "Not Found";
+
+// MARK:- O
+"ok" = "Ok";
+
+// MARK: - P
+"production" = "Production";
