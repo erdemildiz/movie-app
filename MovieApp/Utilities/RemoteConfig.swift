@@ -12,6 +12,7 @@ private struct RemoteConfigConstants {
     static let splashText = "splashText"
 }
 
+/// Firebase remote config
 final class FBRemoteConfig {
     
     static let instance = FBRemoteConfig()
@@ -23,6 +24,8 @@ final class FBRemoteConfig {
         
     }
     
+    /// Fetch config
+    /// - Parameter completed: callback If it completed
     func prepare(_ completed: @escaping (() -> Void)) {
         guard let remoteConfig = remoteConfig else { return }
         remoteConfig.fetchAndActivate(completionHandler: { (status, error) in
@@ -37,6 +40,7 @@ final class FBRemoteConfig {
     }
 }
 
+// MARK: - Remote keys
 extension FBRemoteConfig {
     
     var splashText: String {

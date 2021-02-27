@@ -7,6 +7,7 @@
 
 import Foundation
 
+/// Manage all service 
 struct ConfigManager {
     
     // Service url
@@ -17,9 +18,9 @@ struct ConfigManager {
         var value: String {
             switch self {
             case .baseUrl:
-                return "http://www.omdbapi.com/"
+                return AppUrls.MovieService.baseUrl.value
             case .apiKey:
-                return "fa86c8e3"
+                return AppUrls.MovieService.apiKey.value
             }
         }
     }

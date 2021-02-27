@@ -12,6 +12,7 @@ enum AlertType {
     case alert(title: String, message: String)
 }
 
+/// Alert Managment
 final class AlertManager {
     
     static let manager = AlertManager()
@@ -21,6 +22,10 @@ final class AlertManager {
         alert = UIAlertController(title: nil, message: nil, preferredStyle: .alert)
     }
     
+    /// Show popop alert
+    /// - Parameters:
+    ///   - type: AlertType
+    ///   - presentViewController: UIViewController
     func showPopupAlert(_ type: AlertType, _ presentViewController: UIViewController) {
         switch type {
         case .alert(let title, let message):

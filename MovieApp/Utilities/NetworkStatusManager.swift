@@ -13,6 +13,7 @@ enum NetWorkstatus {
     case isOff
 }
 
+/// Network connection
 final class NetworkStatusManager {
     
     static let manager = NetworkStatusManager()
@@ -23,6 +24,8 @@ final class NetworkStatusManager {
         monitor?.start(queue: .main)
     }
     
+    /// Check network and return status
+    /// - Parameter status: callback NetWorkstatus
     func checkNetwork(_ status: @escaping ((NetWorkstatus) -> Void)) {
         guard let monitor = self.monitor else { return }
         monitor.pathUpdateHandler = { path in

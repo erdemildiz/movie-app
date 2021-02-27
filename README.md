@@ -1,3 +1,5 @@
+#### Usage
+
 ```ssh
-pod install
+pod install && open MovieApp.xcworkspace 
 ```

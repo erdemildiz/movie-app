@@ -15,7 +15,7 @@ class MoviesView: UITableViewController {
         let searchController = UISearchController()
         searchController.searchBar.delegate = self
         searchController.automaticallyShowsCancelButton = false
-        searchController.searchBar.placeholder = "Search a movie"
+        searchController.searchBar.placeholder = Constants.searchMovie
         return searchController
     }()
     lazy var loadingIndicator: UIActivityIndicatorView = {
@@ -41,7 +41,7 @@ class MoviesView: UITableViewController {
         // Set background color
         view.backgroundColor = .white
         // Nav title
-        title = "Movies"
+        title = Screens.movie.value
         // Set Search bar
         navigationItem.searchController = searchController
         // Set table style

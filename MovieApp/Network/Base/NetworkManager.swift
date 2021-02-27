@@ -8,10 +8,17 @@
 import Foundation
 import Moya
 
+/// Network managment
 struct NetworkManager<Target> where Target: Moya.TargetType  {
     
     internal let provider = MoyaProvider<Target>(plugins: [NetworkLoggerPlugin()])
     
+    /// Network request
+    /// - Parameters:
+    ///   - target: TargetType
+    ///   - model: Codable
+    ///   - completion: Result<MoyaResponse, MoyaError>
+    /// - Returns: callback Result<MoyaResponse, MoyaError>
     @discardableResult
     func request<T: Decodable>(
         target: Target,

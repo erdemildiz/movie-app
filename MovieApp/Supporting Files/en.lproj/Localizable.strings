@@ -9,6 +9,9 @@
 // MARK: - A
 "actor" = "Actor";
 
+// MARK: - C
+"connection_status" = "Internet Connection Status";
+
 // MARK: - D
 "direction" = "Direction";
 
@@ -23,9 +26,13 @@
 
 // MARK: - N
 "notfound" = "Not Found";
+"notconnection" = "Internet connection not found!";
 
 // MARK:- O
 "ok" = "Ok";
 
 // MARK: - P
 "production" = "Production";
+
+// MARK: - S
+"search_movie" = "Search a movie";

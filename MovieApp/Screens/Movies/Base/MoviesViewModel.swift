@@ -27,6 +27,8 @@ final class MoviesViewModel {
         getMovie(movieName)
     }
     
+    /// Fetch movies
+    /// - Parameter movieName: String
     private func getMovie(_ movieName: String){
         NetworkManager<MovieService>().request(target: .getRandom(movie: movieName), Movie.self) { [weak self] (result) in
             switch result {

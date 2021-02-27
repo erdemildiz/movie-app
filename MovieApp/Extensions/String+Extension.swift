@@ -9,6 +9,9 @@ import Foundation
 
 extension String {
     
+    /// Localization
+    /// - Parameter key: String
+    /// - Returns: String
     static func localize(key: String) -> String {
         return NSLocalizedString(key, comment: "")
     }

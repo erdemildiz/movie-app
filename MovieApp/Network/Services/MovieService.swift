@@ -20,7 +20,6 @@ extension MovieService: ServiceDefinable {
         }
     }
     
-
     var task: Task {
         switch self {
         case .getRandom(let movie):

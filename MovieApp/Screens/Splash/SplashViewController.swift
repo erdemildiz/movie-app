@@ -64,7 +64,7 @@ extension SplashViewController: SplashViewControllerProtocol {
         switch output {
         case .interntConnectionStatus(let isHaveConnection):
             if !isHaveConnection {
-                AlertManager.manager.showPopupAlert(.alert(title: "Test", message: "Message"), self)
+                AlertManager.manager.showPopupAlert(.alert(title: Constants.connectionStatus, message: Constants.notconnection), self)
             }
         case .redirectHomePage:
             let moviesView = MoviesView()

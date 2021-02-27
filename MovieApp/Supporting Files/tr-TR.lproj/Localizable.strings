@@ -9,6 +9,9 @@
 // MARK: - A
 "actor" = "Aktör";
 
+// MARK: - C
+"connection_status" = "İnternet bağlantı durumu";
+
 // MARK: - D
 "direction" = "Yönetmen";
 
@@ -23,9 +26,13 @@
 
 // MARK: - N
 "notfound" = "Bulunamadı";
+"notconnection" = "İnternet bağlantısı bulunamadı!";
 
 // MARK:- O
 "ok" = "Tamam";
 
 // MARK: - P
 "production" = "Yapım";
+
+// MARK: - S
+"search_movie" = "Film ara";
